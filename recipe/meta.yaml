@@ -1,5 +1,5 @@
 {% set name = "pdftext" %}
-{% set version = "0.3.18" %}
+{% set version = "0.3.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pdftext-{{ version }}.tar.gz
-  sha256: 437d1363753c588dec66916e211ecc74641586f799089455e0f4a572c3523082
+  sha256: 9fec64c6e5e5ced8d08f329dcd32c822b28019e2972cad11b32f1fdc55ee4630
 
 build:
   entry_points:
