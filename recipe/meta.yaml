@@ -1,5 +1,5 @@
 {% set name = "pdftext" %}
-{% set version = "0.4.1" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pdftext-{{ version }}.tar.gz
-  sha256: ae06f3c0844e7cc631af86b844f4af06b72da2b67d7450441ead258a64e98660
+  sha256: 0de0a4a5a448cdf28aea30706b3b79013aa8e679488e4d7a57cf69407ab9fb46
 
 build:
   entry_points:
@@ -23,6 +23,7 @@ requirements:
     - poetry-core
     - pip
   run:
+    - click >=8.1.8,<9.0.0
     - onnxruntime >=1.19.2,<2.0.0
     - python >={{ python_min }},<3.13
     - pypdfium2 =4.30.0
